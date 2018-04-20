@@ -9,11 +9,45 @@
     <Window.Resources>
         <ControlTemplate x:Key="EnemyTemplate" TargetType="{x:Type ContentControl}">
             <Grid>
-                <Ellipse Fill="Red" Height="100" Stroke="Black" Width="100"/>
+                <Ellipse Fill="Gray" Height="100" Stroke="Black" Width="100"/>
+                <Ellipse HorizontalAlignment="Center" Height="35" Margin="40,20,70,-10" Stroke="Black" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.5,0.5">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="10"/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0.007"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF090909"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Height="35" Margin="70,20,40,-10" Stroke="Black" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center">
+                    <Ellipse.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="-10"/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Ellipse.RenderTransform>
+                    <Ellipse.Fill>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0.007"/>
+                            <GradientStop Color="White" Offset="1"/>
+                            <GradientStop Color="#FF090909"/>
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
             </Grid>
         </ControlTemplate>
     </Window.Resources>
-    <Grid Background="Black">
+    <Grid x:Name="grid" Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="140"/>
             <ColumnDefinition/>
@@ -23,13 +57,13 @@
             <RowDefinition/>
             <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
-        <Button x:Name="startButton" Content="Start!" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
-        <ProgressBar Grid.Column="1" Grid.Row="1" Height="20"/>
+        <Button x:Name="startButton" Content="Start!" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="startButton_Click"/>
+        <ProgressBar x:Name="progressBar" Grid.Column="1" Grid.Row="1" Height="20"/>
         <StackPanel Grid.Column="2" Orientation="Vertical" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock x:Name="textBlock" TextWrapping="Wrap" RenderTransformOrigin="-0.51,1.562" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"><Span FontFamily="Courier New"><Run Text="Avoid These "/></Span><LineBreak/><Span FontFamily="Courier New"><Run/></Span></TextBlock>
             <ContentControl Content="ContentControl" HorizontalAlignment="Center" VerticalAlignment="Center" Template="{DynamicResource EnemyTemplate}"/>
         </StackPanel>
-        <Canvas x:Name="playArea" Grid.ColumnSpan="3">
+        <Canvas x:Name="playArea" Grid.ColumnSpan="3" MouseMove="playArea_MouseMove" MouseLeave="playArea_MouseLeave">
             <Canvas.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FF01884D" Offset="0"/>
@@ -38,12 +72,12 @@
                     <GradientStop Color="#FFA441EE"/>
                 </LinearGradientBrush>
             </Canvas.Background>
-            <StackPanel x:Name="human" Orientation="Vertical">
+            <StackPanel x:Name="human" Orientation="Vertical" MouseDown="human_MouseDown">
                 <Ellipse Fill="White" Height="10" Stroke="Black"  Width="10"/>
                 <Rectangle Fill="White" Height="25" Stroke="Black"  Width="10"/>
             </StackPanel>
             <TextBlock x:Name="gameOverText" Canvas.Left="266" TextWrapping="Wrap" Text="Game Over" Canvas.Top="155" FontSize="100" FontFamily="Arial" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Rectangle x:Name="target" Height="52" Canvas.Left="355" Stroke="Black" Canvas.Top="370" Width="50">
+            <Rectangle x:Name="target" Height="52" Canvas.Left="355" Stroke="Black" Canvas.Top="370" Width="50" MouseEnter="target_MouseEnter">
                 <Rectangle.LayoutTransform>
                     <TransformGroup>
                         <ScaleTransform/>
