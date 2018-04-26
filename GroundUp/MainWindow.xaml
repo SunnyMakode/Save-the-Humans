@@ -1,0 +1,28 @@
+﻿<Window x:Class="GroundUp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GroundUp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style x:Key="BodyTextStyle" TargetType="{x:Type TextBlock}"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button1" Content="Show message" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center"  VerticalAlignment="Center" Width="98" Click="button1_Click" Margin="92,43,68,43"/>
+        <Button x:Name="button2" Content="If/Else" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Click="button2_Click" />
+        <Button x:Name="button3" Content="Another conditional test" Grid.Row="1"  HorizontalAlignment="Center"   VerticalAlignment="Center" Width="143" Click="button3_Click" Margin="92,43,23,43"/>
+        <Button x:Name="button4" Content="A loop" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center"   VerticalAlignment="Center" Width="75" Click="button4_Click"/>
+        <TextBlock x:Name="myLabel" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2" Style="{DynamicResource BodyTextStyle}"/>
+    </Grid>
+</Window>
