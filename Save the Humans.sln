@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fun_With_If_Else", "Fun_Wit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter2-Program4", "Chapter2-Program4\Chapter2-Program4.csproj", "{8A12FC15-CA52-4CD8-944E-0E5B7102F674}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkerTester", "TalkerTester\TalkerTester.csproj", "{50C17D45-7D84-437B-AABC-F0C7CA25348D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8A12FC15-CA52-4CD8-944E-0E5B7102F674}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A12FC15-CA52-4CD8-944E-0E5B7102F674}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A12FC15-CA52-4CD8-944E-0E5B7102F674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C17D45-7D84-437B-AABC-F0C7CA25348D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C17D45-7D84-437B-AABC-F0C7CA25348D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C17D45-7D84-437B-AABC-F0C7CA25348D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C17D45-7D84-437B-AABC-F0C7CA25348D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
