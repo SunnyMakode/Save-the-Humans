@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter2-Program4", "Chapte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkerTester", "TalkerTester\TalkerTester.csproj", "{50C17D45-7D84-437B-AABC-F0C7CA25348D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MileageCalculator", "MileageCalculator\MileageCalculator.csproj", "{CF1ECB12-9101-4435-8BF7-7FA953A34AB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{50C17D45-7D84-437B-AABC-F0C7CA25348D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50C17D45-7D84-437B-AABC-F0C7CA25348D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50C17D45-7D84-437B-AABC-F0C7CA25348D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1ECB12-9101-4435-8BF7-7FA953A34AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1ECB12-9101-4435-8BF7-7FA953A34AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1ECB12-9101-4435-8BF7-7FA953A34AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1ECB12-9101-4435-8BF7-7FA953A34AB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
