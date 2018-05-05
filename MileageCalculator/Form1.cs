@@ -32,7 +32,14 @@ namespace MileageCalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show( "Distance travelled "+ (numericUpDown2.Value - numericUpDown1.Value) + " miles");
+            if (numericUpDown2.Value > numericUpDown1.Value)
+            {
+                MessageBox.Show("Distance travelled " + (numericUpDown2.Value - numericUpDown1.Value) + " miles");
+            }
+            else
+            {
+                MessageBox.Show("The starting mileage needs to be less than ending mileage", "Cannot Calculate distance");
+            }            
         }
     }
 }
