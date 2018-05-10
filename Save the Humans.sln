@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkerTester", "TalkerTeste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MileageCalculator", "MileageCalculator\MileageCalculator.csproj", "{CF1ECB12-9101-4435-8BF7-7FA953A34AB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swap", "Swap\Swap.csproj", "{EF8E6CA3-B4C0-4FCC-B504-FE201BFD8362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SloppyJoeBudgetHouse", "SloppyJoeBudgetHouse\SloppyJoeBudgetHouse.csproj", "{7CA6B521-CF77-46AE-B881-AFB75C849435}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{CF1ECB12-9101-4435-8BF7-7FA953A34AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF1ECB12-9101-4435-8BF7-7FA953A34AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF1ECB12-9101-4435-8BF7-7FA953A34AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF8E6CA3-B4C0-4FCC-B504-FE201BFD8362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8E6CA3-B4C0-4FCC-B504-FE201BFD8362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8E6CA3-B4C0-4FCC-B504-FE201BFD8362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8E6CA3-B4C0-4FCC-B504-FE201BFD8362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CA6B521-CF77-46AE-B881-AFB75C849435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA6B521-CF77-46AE-B881-AFB75C849435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA6B521-CF77-46AE-B881-AFB75C849435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CA6B521-CF77-46AE-B881-AFB75C849435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
