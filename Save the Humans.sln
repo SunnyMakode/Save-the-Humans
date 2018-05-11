@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swap", "Swap\Swap.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SloppyJoeBudgetHouse", "SloppyJoeBudgetHouse\SloppyJoeBudgetHouse.csproj", "{7CA6B521-CF77-46AE-B881-AFB75C849435}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitTheKeys", "HitTheKeys\HitTheKeys.csproj", "{30E60293-68B1-4289-8084-B77867C05301}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouncingControls", "BouncingControls\BouncingControls.csproj", "{8A9FE8B5-9B9D-473F-97D5-CBEE60BF2440}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{7CA6B521-CF77-46AE-B881-AFB75C849435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CA6B521-CF77-46AE-B881-AFB75C849435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CA6B521-CF77-46AE-B881-AFB75C849435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E60293-68B1-4289-8084-B77867C05301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E60293-68B1-4289-8084-B77867C05301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E60293-68B1-4289-8084-B77867C05301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E60293-68B1-4289-8084-B77867C05301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A9FE8B5-9B9D-473F-97D5-CBEE60BF2440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A9FE8B5-9B9D-473F-97D5-CBEE60BF2440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A9FE8B5-9B9D-473F-97D5-CBEE60BF2440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A9FE8B5-9B9D-473F-97D5-CBEE60BF2440}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
