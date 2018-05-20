@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitTheKeys", "HitTheKeys\Hi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouncingControls", "BouncingControls\BouncingControls.csproj", "{8A9FE8B5-9B9D-473F-97D5-CBEE60BF2440}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventPlanner", "EventPlanner\EventPlanner.csproj", "{EDD11918-2DB4-42F1-A57D-5DE3C3156D41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{8A9FE8B5-9B9D-473F-97D5-CBEE60BF2440}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A9FE8B5-9B9D-473F-97D5-CBEE60BF2440}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A9FE8B5-9B9D-473F-97D5-CBEE60BF2440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD11918-2DB4-42F1-A57D-5DE3C3156D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD11918-2DB4-42F1-A57D-5DE3C3156D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD11918-2DB4-42F1-A57D-5DE3C3156D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD11918-2DB4-42F1-A57D-5DE3C3156D41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
